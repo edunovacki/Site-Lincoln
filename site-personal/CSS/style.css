@@ -1,0 +1,328 @@
+/* Reset e configurações base */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container, .container-fluid {
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col, [class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Estilos gerais */
+body {
+  background-color: #717173 !important;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #040404 !important;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.navbar .nav-item {
+  padding-right: 35px !important;
+  padding: 10px;
+}
+
+.navbar a {
+  color: #fecf00 !important;
+}
+
+.navbar .nav-link {
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: #f8f6ec !important;
+}
+
+/* Tipografia */
+h1, h2 {
+  text-align: center;
+  color: #f8f6ec;
+  padding-top: 60px;
+}
+
+h2 {
+  color: #fecf00;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+  color: #f8f6ec;
+  padding-top: 20px;
+}
+
+.resultado {
+  color: #fecf00;
+  font-family: "Edu VIC WA NT Hand", cursive;
+}
+
+/* Boxes com sombra - ESPAÇAMENTO CORRIGIDO AQUI */
+.row .col {
+  margin: 30px 15px;  /* Aumentei o espaçamento vertical */
+  box-shadow: 0 0 10px #040404;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #878787; /* Adicionei fundo para contrastar com a sombra */
+}
+
+/* Formulário */
+form {
+  background-color: #878787;
+  max-width: 650px;
+  margin: 80px auto;
+  box-shadow: 0 0 10px #040404;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form .btn {
+  margin: 15px auto;
+  padding: 10px 20px;
+  display: block;
+}
+
+/* Mapa */
+.maps {
+  box-shadow: 0 0 10px #040404;
+  border-radius: 5px;
+  margin: 80px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #878787;
+}
+
+/* Seções específicas */
+.persona {
+  margin-top: 150px;
+}
+
+.personal {
+  align-items: center !important;
+}
+
+/* Footer */
+footer {
+  background-color: #040404;
+  padding: 1px 0;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 60px; /* Adicionei margem no topo */
+}
+
+footer p {
+  color: #fecf00 !important;
+  padding: 10px;
+  text-align: center !important;
+  margin: 0;
+}
+
+footer .icones {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer .icones a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  background-color: #717173;
+  color: #fecf00;
+  margin: 0 10px; /* Aumentei o espaçamento entre ícones */
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  transition: 0.4s all;
+}
+
+footer .icones a:hover {
+  transform: scale(1.1);
+}
+
+footer .icones a:hover .fa-instagram {
+  color: rgb(255, 41, 77);
+}
+
+footer .icones a:hover .fa-whatsapp {
+  color: rgb(14, 255, 14);
+}
+
+/* Planos - ESPAÇAMENTO CORRIGIDO AQUI */
+.planos {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 40px; /* Adicionei espaçamento na base */
+}
+
+.planos .row {
+  margin: 40px 0; /* Espaçamento maior ao redor dos planos */
+}
+
+.planos .col {
+  margin: 25px 15px !important; /* Espaçamento uniforme */
+  transition: all 0.3s ease; /* Efeito hover suave */
+}
+
+.planos .col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.planos p {
+  text-align: center !important;
+  padding-top: 0px;
+  font-weight: bold;
+}
+
+.planos h3 {
+  padding-top: 15px;
+  color: #fecf00;
+}
+
+.planos h4 {
+  color: #040404;
+}
+
+.planos ul {
+  padding-left: 30px;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.planos li {
+  padding-right: 30px;
+  color: #f8f6ec;
+  margin-bottom: 10px;
+}
+
+.planos .btn {
+  padding: 12px 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .planos ul {
+    padding-left: 20px;
+  }
+  
+  .planos li {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .col {
+    width: 90% !important;
+    margin: 25px auto !important; /* Centraliza e mantém espaçamento */
+  }
+  
+  .maps {
+    padding: 15px !important;
+  }
+  
+  .planos .col {
+    margin-bottom: 40px !important;
+  }
+  
+  .planos ul {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  
+  .nav-item {
+    padding: 12px 0 !important;
+  }
+  
+  h1, h2 {
+    font-size: 1.8rem !important;
+    padding-top: 40px !important;
+  }
+  
+  p {
+    padding-top: 15px !important;
+  }
+  
+  form {
+    margin: 50px auto !important;
+    width: 90%;
+  }
+  
+  .persona {
+    margin-top: 80px;
+  }
+  
+  .planos .col {
+    margin: 20px auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  h1, h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    padding: 10px 5px;
+  }
+  
+  .planos ul {
+    padding-left: 20px !important;
+  }
+  
+  .planos li {
+    padding-right: 0 !important;
+  }
+  
+  .maps {
+    padding: 10px 5px !important;
+    margin: 40px auto !important;
+  }
+  
+  .row .col, .planos .col {
+    margin: 20px auto !important;
+    padding: 15px !important;
+  }
+}
