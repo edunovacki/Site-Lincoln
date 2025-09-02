@@ -9,9 +9,9 @@
           <li class="nav-item">
             <a href="index.php" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a href="persona.php" class="nav-link"><i class="fa-solid fa-house"></i> Persona</a>
-          </li>
+          </li>!-->
           <li class="nav-item">
             <a href="sobre.php" class="nav-link"><i class="fa-solid fa-user"></i> Sobre Mim</a>
           </li>

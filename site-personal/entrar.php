@@ -22,9 +22,9 @@
     <main class="container">
         <form action="index.php" method="post">
             <h1>Login</h1>
-            <div class="input-box"><input placeholder="Usuário" type="text" required><i class="fa-solid fa-user"></i></div>
-            <div class="input-box"><input placeholder="Senha" type="password" required><i class="fa-solid fa-lock"></i></div>
-            <div class="remember-forgot"><label><input type="checkbox"> Lembrar senha</label><a href="#">Esqueci a senha</a></div>
+            <div class="input-box"><input placeholder="Usuário" type="text"><i class="fa-solid fa-user"></i></div>
+            <div class="input-box"><input placeholder="Senha" type="password"><i class="fa-solid fa-lock"></i></div>
+            <!--<div class="remember-forgot"><label><input type="checkbox"> Lembrar senha</label><a href="#">Esqueci a senha</a></div>!-->
             <button type="submit" class="login">Login</button>
             <div class="register-link">
                 <p>Não tem uma conta?<a href="cadastrar.php"> Cadastre-se<a></p>
